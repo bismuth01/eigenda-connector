@@ -1,7 +1,7 @@
 # EigenDA connector
 
 Uses the EigenDA API to connect to the EigenDA server using Free Tier plan.
-The API definitions for typescript are generated from the proto files in proto/ which has been taken from the EigenDA github repository.
+The API definitions for typescript are generated from the proto files in proto/ which has been taken from the [EigenDA github repository](https://github.com/Layr-Labs/eigenda/tree/master/api/proto).
 
 Blobs have a size limit depending on the EigenDA plan, so make sure the RPC calls are being accepted for a particular string length.
 
@@ -20,7 +20,7 @@ npm install
 ```
 
 Rename .env-local to .env and update the values as required.
-The default is set to EigenDA holesky testnet.
+The default is set to [EigenDA holesky testnet](https://docs.eigenda.xyz/networks/holesky).
 
 ## Usage
 
