@@ -1,0 +1,38 @@
+{
+  "name": "eigenda-connector",
+  "version": "1.0.0",
+  "description": "Simple EigenDA connector to store and retrieve blobs as strings",
+  "main": "index.js",
+  "scripts": {
+    "test_store": "npx ts-node ./src/store_blob.ts",
+    "test_retrieve": "npx ts-node ./src/retrieve_blob.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bismuth01/eigenda-connector.git"
+  },
+  "keywords": [
+    "Eigen"
+  ],
+  "author": "Siddhartha Swarnkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bismuth01/eigenda-connector/issues"
+  },
+  "homepage": "https://github.com/bismuth01/eigenda-connector#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.12.6",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "grpc_tools_node_protoc_ts": "^5.3.3"
+  },
+  "devDependencies": {
+    "@grpc/proto-loader": "^0.7.13",
+    "@types/axios": "^0.9.36",
+    "@types/google-protobuf": "^3.15.12",
+    "@types/node": "^22.13.1",
+    "grpc-tools": "^1.13.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
