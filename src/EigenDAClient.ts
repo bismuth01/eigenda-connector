@@ -41,6 +41,11 @@ class EigenDAClient {
     const bytes = Buffer.from(data, "utf-8");
     const buffer = Buffer.alloc(32, 0);
 
+    const MAX_LENGTH = 16;
+    if (data.length > MAX_LENGTH) {
+      console.warn(`Warning: Data will be truncated to ${MAX_LENGTH} bytes`);
+    }
+
     // Copy data bytes, but limit to 16 bytes to ensure the value stays well below the field modulus
     const maxLength = Math.min(bytes.length, 16);
     for (let i = 0; i < maxLength; i++) {

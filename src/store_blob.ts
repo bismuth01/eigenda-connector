@@ -1,4 +1,4 @@
-import EigenDAClient from "./eigen";
+import EigenDAClient from "./EigenDAClient";
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 

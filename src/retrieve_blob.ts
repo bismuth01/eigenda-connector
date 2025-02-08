@@ -1,4 +1,4 @@
-import EigenDAClient from "./eigen";
+import EigenDAClient from "./EigenDAClient";
 
 async function retrieveBlob(batchHeaderHash: string, blobIndex: number) {
   try {
